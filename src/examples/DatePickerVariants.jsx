@@ -16,7 +16,7 @@ function DatePickerVariants() {
 
         {/* Default Variant */}
         <div>
-            <h3>Default Variant</h3>
+            <h3>Default</h3>
             <DatePicker
                 id="datepicker-default"
                 selectedDate="2023-10-15"
@@ -24,11 +24,18 @@ function DatePickerVariants() {
                 isError={false}
                 setter={handleDateChange}
             />
+            <ul>
+                <li>id: The unique identifier for the DatePicker.</li>
+                <li>selectedDate: The initially selected date, set to "2023-10-15" in this variant.</li>
+                <li>zIndex: The z-index for the DatePicker.</li>
+                <li>isError: A boolean flag indicating if there is an error with the date selection (false in this case).</li>
+                <li>setter: A callback function to handle date changes.</li>
+            </ul>
         </div>
 
         {/* Variant 1 */}
         <div>
-            <h3>Variant 1</h3>
+            <h3>Example 1</h3>
             <DatePicker
                 id="datepicker-variant2"
                 selectedDate="2023-11-30"
@@ -44,11 +51,26 @@ function DatePickerVariants() {
                 minYear={2000}
                 substractionYears={-10}
             />
+            <ul>
+                <li>id: The unique identifier for the DatePicker.</li>
+                <li>selectedDate: The initially selected date, set to "2023-11-30" in this variant.</li>
+                <li>zIndex: The z-index for the DatePicker.</li>
+                <li>isError: A boolean flag indicating if there is an error with the date selection (false in this case).</li>
+                <li>setter: A callback function to handle date changes.</li>
+                <li>width: The width of the DatePicker (400px).</li>
+                <li>height: The height of the DatePicker (50px).</li>
+                <li>backgroundColor: The background color of the DatePicker (white).</li>
+                <li>backgroundColorDropdown: The background color of the date dropdown (gray).</li>
+                <li>textColor: The text color of the DatePicker (blue).</li>
+                <li>borderColor: The border color of the DatePicker (blue).</li>
+                <li>minYear: The minimum year in the date picker (2000).</li>
+                <li>substractionYears: The number of years to subtract from the current year (-10).</li>
+            </ul>
         </div>
 
         {/* Variant 2 */}
         <div>
-            <h3>Variant 2</h3>
+            <h3>Example 2</h3>
             <DatePicker
                 id="datepicker-variant2"
                 selectedDate={selectedDate}
@@ -64,11 +86,25 @@ function DatePickerVariants() {
                 minYear={2000}
                 substractionYears={-10}
             />
+            <ul>
+                <li>id: The unique identifier for the DatePicker.</li>
+                <li>selectedDate: The selected date is now based on the `selectedDate` variable, allowing dynamic selection.</li>
+                <li>zIndex: The z-index for the DatePicker.</li>
+                <li>isError: Indicates an error (true in this case).</li>
+                <li>width: The width of the DatePicker (400px).</li>
+                <li>height: The height of the DatePicker (50px).</li>
+                <li>backgroundColor: The background color of the DatePicker (white).</li>
+                <li>backgroundColorDropdown: The background color of the date dropdown (gray).</li>
+                <li>textColor: The text color of the DatePicker (blue).</li>
+                <li>borderColor: The border color of the DatePicker (blue).</li>
+                <li>minYear: The minimum year in the date picker (2000).</li>
+                <li>substractionYears: The number of years to subtract from the current year (-10).</li>
+            </ul>
         </div>
 
         {/* Variant 3 */}
         <div>
-            <h3>Variant 3</h3>
+            <h3>Example 3</h3>
             <DatePicker
                 id="datepicker-variant2"
                 selectedDate={selectedDate}
@@ -84,6 +120,21 @@ function DatePickerVariants() {
                 minYear={2000}
                 substractionYears={-10}
             />
+            <ul>
+                <li>id: The unique identifier for the DatePicker.</li>
+                <li>selectedDate: The selected date is now based on the `selectedDate` variable, allowing dynamic selection.</li>
+                <li>zIndex: The z-index for the DatePicker.</li>
+                <li>isError: A boolean flag indicating if there is an error with the date selection (false in this case).</li>
+                <li>setter: A callback function to handle date changes.</li>
+                <li>width: The width of the DatePicker (400px).</li>
+                <li>height: The height of the DatePicker (50px).</li>
+                <li>backgroundColor: The background color of the DatePicker (orange).</li>
+                <li>backgroundColorDropdown: The background color of the date dropdown (black).</li>
+                <li>textColor: The text color of the DatePicker (green).</li>
+                <li>borderColor: The border color of the DatePicker (orange).</li>
+                <li>minYear: The minimum year in the date picker (2000).</li>
+                <li>substractionYears: The number of years to subtract from the current year (-10).</li>
+            </ul>
         </div>
 
         {/* Add more variants as needed */}
